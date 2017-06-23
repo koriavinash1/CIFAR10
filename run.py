@@ -3,11 +3,11 @@ import time
 
 ptime = time.time()
 print "running Position Based Network"
-os.system('python vgg16.py 0')
+os.system('python cifar10.py 0')
 
 ntime = time.time()
 print "running Normal Network"
-os.system('python vgg16.py 1')
+os.system('python cifar10.py 1')
 
 print "---------------------------------------------------------------------------"
 print "Total time taken: {}sec".format(time.time() - ptime)
